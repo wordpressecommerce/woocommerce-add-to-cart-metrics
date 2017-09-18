@@ -1,6 +1,6 @@
 # WooCommerce Add to Cart Metrics
 
-Record add-to-cart metrics in a custom DB table when WooCommerce is active.
+Track add-to-cart metrics in a custom DB table when WooCommerce is active.
 
 ## Description
 
