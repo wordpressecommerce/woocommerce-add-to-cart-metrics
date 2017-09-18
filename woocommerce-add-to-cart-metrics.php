@@ -14,16 +14,8 @@
  */
  
 // Event tracking
-add_action( 'woocommerce_after_add_to_cart_button', array( $this, 'log_add_to_cart' ) );
-add_action( 'wp_footer', array( $this, 'log_loop_add_to_cart' ) );
-add_action( 'woocommerce_after_cart', array( $this, 'log_remove_from_cart' ) );
-add_action( 'woocommerce_after_mini_cart', array( $this, 'log_remove_from_cart' ) );
-add_filter( 'woocommerce_cart_item_remove_link', array( $this, 'log_remove_from_cart_attributes' ), 10, 2 );
-add_action( 'woocommerce_after_shop_loop_item', array( $this, 'log_listing_impression' ) );
-add_action( 'woocommerce_after_shop_loop_item', array( $this, 'log_listing_click' ) );
-add_action( 'woocommerce_after_single_product', array( $this, 'log_product_detail' ) );
-add_action( 'woocommerce_after_checkout_form', array( $this, 'log_checkout_process' ) );
-
+add_action( 'woocommerce_after_add_to_cart_button', 'log_add_to_cart'  );
+add_action( 'wp_footer', 'log_loop_add_to_cart'  );
 
 function log_add_to_cart() {
 	 $this->log_wc( 'add-to-cart' );
