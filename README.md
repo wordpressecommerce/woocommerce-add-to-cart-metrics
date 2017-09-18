@@ -20,5 +20,5 @@ With WordPress 2.7 or above, you can simply go to Plugins > Add New in the WordP
 
 ## Changelog
 
-**1.0**
+**1.0.0**
 * Initial release.
