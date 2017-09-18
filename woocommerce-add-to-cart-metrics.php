@@ -23,7 +23,7 @@ add_action( 'woocommerce_after_shop_loop_item', array( $this, 'log_listing_impre
 add_action( 'woocommerce_after_shop_loop_item', array( $this, 'log_listing_click' ) );
 add_action( 'woocommerce_after_single_product', array( $this, 'log_product_detail' ) );
 add_action( 'woocommerce_after_checkout_form', array( $this, 'log_checkout_process' ) );
-}
+
 
 function log_add_to_cart() {
 	 $this->log_wc( 'add-to-cart' );
