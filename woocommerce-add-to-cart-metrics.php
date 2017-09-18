@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: WooCommerce Add to Cart Metrics
- * Description: Record add-to-cart metrics in a custom DB table when WooCommerce is active.
+ * Description: Track add-to-cart metrics in a custom DB table when WooCommerce is active.
  * Version:     1.0.0
  * Author:      Liquid Web
  * Author URI:  https://www.liquidweb.com
