@@ -35,15 +35,6 @@ function log_loop_add_to_cart() {
 
 register_activation_hook( __FILE__, 'wc_metrics_create_db' );
 function wc_metrics_create_db() {
-	// Create DB Here
-}
-
-function get_db_version_option_key() {
-	 return 'lw_wc_metric_log';
-}
-
-
-function wc_metrics_create_new_db() {
 
 	global $wpdb;
 	$charset_collate = $wpdb->get_charset_collate();
@@ -59,6 +50,10 @@ function wc_metrics_create_new_db() {
 
 	require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
 	dbDelta( $sql );
+}
+
+function get_db_version_option_key() {
+	 return 'lw_wc_metric_log';
 }
 
 register_deactivation_hook( __FILE__, 'wc_metrics_remove_database' );
