@@ -2,7 +2,7 @@
 Contributors: liquidweb, lukefiretoss
 Tags: woocommerce, add, to, cart, logging, ecommerce
 Requires at least: 4.6
-Tested up to: 4.8.1
+Tested up to: 4.8.2
 Requires PHP: 5.3
 Stable tag: 1.0.0
 License: MIT
